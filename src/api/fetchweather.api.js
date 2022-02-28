@@ -19,7 +19,7 @@ export const fetchWeather = async (query) => {
 
 export const fetchWithcoordinates = async (lat, long) => {
   const { data } = await axios.get(
-    `${URL}?lat=${lat}&lon=${long}&appid=${API_KEY}`
+    `${URL}?lat=${lat}&lon=${long}&units=metric&appid=${API_KEY}`
   );
 
   return data;
